@@ -3,170 +3,180 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>Tải Hack Roblox - Hoang Kun Store</title>
+<title>Roblox</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-/* === BẢNG MÀU CYBERPUNK (XANH NEON & XANH DƯƠNG) === */
-:root {
-  --primary: #00f2fe;
-  --secondary: #4facfe;
-  --bg: #050914;
-  --card: #0f172a;
-  --text: #f8fafc;
-  --muted: #94a3b8;
+:root{
+  --purple:#8b5cf6;
+  --pink:#ec4899;
+  --cyan:#22d3ee;
+  --bg:#05060a;
+  --card:#0c1020;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
 
-  --glow-primary: 0 0 25px rgba(0, 242, 254, 0.6);
-  --glow-secondary: 0 0 35px rgba(79, 172, 254, 0.4);
+  --glow-purple:0 0 25px rgba(139,92,246,.6);
+  --glow-pink:0 0 35px rgba(236,72,153,.4);
 }
 
-* { box-sizing: border-box; }
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Arial, sans-serif;
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  font-family:-apple-system,"SF Pro Text","Segoe UI",Roboto,Arial;
   background:
-    radial-gradient(1200px 600px at 20% -10%, rgba(0, 242, 254, 0.15), transparent 40%),
-    radial-gradient(800px 400px at 90% 10%, rgba(79, 172, 254, 0.12), transparent 40%),
+    radial-gradient(1200px 600px at 20% -10%,rgba(139,92,246,.18),transparent 40%),
+    radial-gradient(800px 400px at 90% 10%,rgba(34,211,238,.12),transparent 40%),
     var(--bg);
-  color: var(--text);
+  color:var(--text);
 }
-a { color: inherit; text-decoration: none; }
+a{color:inherit;text-decoration:none}
 
 /* Appbar */
-.appbar {
-  position: sticky; top: 0;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 242, 254, 0.25);
-  z-index: 40;
+.appbar{
+  position:sticky;top:0;
+  background:rgba(12,16,32,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(139,92,246,.25);
+  z-index:40;
 }
-.appbar-inner {
-  max-width: 980px; margin: 0 auto; padding: 12px 16px;
-  display: flex; align-items: center; gap: 12px;
+.appbar-inner{
+  max-width:980px;margin:0 auto;padding:12px 16px;
+  display:flex;align-items:center;gap:12px
 }
-.appstore-icon-wrap {
-  width: 28px; height: 28px;
-  border-radius: 7px; overflow: hidden;
-  background: #000; flex: 0 0 auto;
-  box-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+.appstore-icon-wrap{
+  width:28px;
+  height:28px;
+  border-radius:7px;          /* bo góc kiểu iOS */
+  overflow:hidden;            /* cắt phần trắng thừa */
+  background:#000;            /* nền dự phòng */
+  flex:0 0 auto;
+  box-shadow:0 0 8px rgba(139,92,246,.4);
 }
-.appstore-icon { width: 100%; height: 100%; object-fit: cover; display: block; }
-.appbar-title { font-weight: 800; font-size: 18px; letter-spacing: 0.5px;}
+
+.appstore-icon{
+  width:100%;
+  height:100%;
+  object-fit:cover;           /* zoom cho kín khung */
+  display:block;
+}
+.appbar-title{font-weight:800;font-size:18px}
 
 /* Layout */
-.container { max-width: 980px; margin: 0 auto; padding: 20px 16px 90px; }
+.container{max-width:980px;margin:0 auto;padding:16px 16px 90px}
 
-.card {
-  background: linear-gradient(180deg, #16203a, #0b1120);
-  border-radius: 22px;
-  padding: 16px;
-  border: 1px solid rgba(0, 242, 254, 0.2);
-  box-shadow: 0 0 30px rgba(0, 242, 254, 0.1);
-  margin-bottom: 18px;
+.card{
+  background:linear-gradient(180deg,#0f142c,#090c1b);
+  border-radius:22px;
+  padding:16px;
+  border:1px solid rgba(139,92,246,.25);
+  box-shadow:0 0 30px rgba(139,92,246,.15);
+  margin-bottom:18px;
 }
 
 /* HERO */
-.hero { padding: 18px; }
-.hero-top { display: flex; gap: 16px; align-items: flex-start; }
-.app-icon-wrap {
-  width: 96px; height: 96px; border-radius: 24px;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  padding: 3px; flex: 0 0 auto;
+.hero{padding:18px;}
+.hero-top{display:flex;gap:16px;align-items:flex-start;}
+.app-icon-wrap{
+  width:96px;height:96px;border-radius:24px;
+  background:linear-gradient(135deg,var(--purple),var(--pink));
+  padding:3px;flex:0 0 auto;
 }
-.app-icon { width: 100%; height: 100%; border-radius: 20px; object-fit: cover; background: #000; }
-.hero-info { flex: 1; min-width: 0; }
-.app-name { font-size: 26px; font-weight: 900; margin: 0 0 8px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
-.badge { padding: 6px 12px; border-radius: 999px; font-weight: 800; font-size: 13px; }
-.badge.orange { background: #e0f2fe; color: #0284c7; }
-.badge.gray { background: #334155; color: #f8fafc; }
-.version-row { display: flex; align-items: center; gap: 10px; color: #bae6fd; font-weight: 800; font-size: 14px;}
-.dot { width: 10px; height: 10px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 10px rgba(34, 197, 94, 0.8); }
+.app-icon{
+  width:100%;height:100%;border-radius:20px;object-fit:cover;background:#000;
+}
+.hero-info{flex:1;min-width:0}
+.app-name{font-size:26px;font-weight:900;margin:0 0 8px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+.badge{padding:6px 12px;border-radius:999px;font-weight:800;font-size:14px;}
+.badge.orange{background:#ffd7b5;color:#9a4b00;}
+.badge.gray{background:#9ca3af;color:#111827;}
+.version-row{display:flex;align-items:center;gap:10px;color:#c7d2fe;font-weight:800;}
+.dot{width:12px;height:12px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px rgba(34,197,94,.8);}
 
-.hero-action { margin-top: 16px; }
-.btn {
-  display: inline-flex; align-items: center; justify-content: center;
-  padding: 14px 28px; width: 100%;
-  border-radius: 999px; font-weight: 900; font-size: 18px;
-  cursor: pointer; border: none; transition: 0.3s;
+.hero-action{margin-top:16px;}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:14px 28px;width:100%;
+  border-radius:999px;font-weight:900;font-size:18px;
+  cursor:pointer;border:none;
 }
-.btn.primary {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  box-shadow: var(--glow-primary);
-  color: #050914; /* Chữ đậm nổi bật trên nền sáng */
-  text-transform: uppercase;
+.btn.primary{
+  background:linear-gradient(135deg,var(--purple),var(--pink));
+  box-shadow:var(--glow-purple),var(--glow-pink);
+  color:#fff;
 }
-.btn.primary:hover { transform: translateY(-2px); box-shadow: var(--glow-secondary); }
+.tele-link{
+    color: #007bff; /* màu xanh */
+    font-weight: bold; /* chữ đậm */
+    text-decoration: none; /* bỏ gạch chân nếu muốn */
+}
 
-/* Liên hệ Zalo */
-.tele-link { color: #00f2fe; font-weight: bold; text-decoration: none; }
-.tele-link:hover { text-decoration: underline; color: #fff; }
+.tele-link:hover{
+    text-decoration: underline; /* hover cho dễ nhận biết */
+}
 
 /* iOS loader */
-.install-circle { width: 22px; height: 22px; display: none; }
-.install-circle svg { width: 22px; height: 22px; animation: spin 1s linear infinite; }
-.install-circle circle { fill: none; stroke: rgba(5, 9, 20, 0.35); stroke-width: 3; }
-.install-circle .progress-ring { stroke: #050914; stroke-linecap: round; stroke-dasharray: 40; stroke-dashoffset: 20; }
-@keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
-.btn.loading .install-circle { display: inline-block; }
-.btn.loading #installText { display: none; }
+.install-circle{width:22px;height:22px;display:none}
+.install-circle svg{width:22px;height:22px;animation:spin 1s linear infinite}
+.install-circle circle{fill:none;stroke:rgba(255,255,255,.35);stroke-width:3}
+.install-circle .progress-ring{stroke:#fff;stroke-linecap:round;stroke-dasharray:40;stroke-dashoffset:20}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.btn.loading .install-circle{display:inline-block}
+.btn.loading #installText{display:none}
 
 /* Screenshots */
-.section-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-.section-head h2 { margin: 0; font-size: 18px; font-weight: 900; color: #e0f2fe; text-shadow: var(--glow-secondary); }
-.screenshot-list { display: flex; gap: 14px; overflow-x: auto; padding: 6px 2px 10px; list-style: none; margin: 0; }
-.screenshot-list li { flex: 0 0 auto; width: 82%; max-width: 640px; }
-.screenshot-list img { width: 100%; border-radius: 14px; box-shadow: 0 0 20px rgba(0, 242, 254, 0.15); display: block; object-fit: cover; background: #000; }
-.screenshot-list::-webkit-scrollbar, .gallery-scroll::-webkit-scrollbar { display: none; }
+.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.section-head h2{margin:0;font-size:18px;font-weight:900;color:#c4b5fd;text-shadow:var(--glow-purple)}
+.screenshot-list{display:flex;gap:14px;overflow-x:auto;padding:6px 2px 10px;list-style:none;margin:0}
+.screenshot-list li{flex:0 0 auto;width:82%;max-width:640px}
+.screenshot-list img{width:100%;border-radius:14px;box-shadow:0 0 30px rgba(139,92,246,.25);display:block;object-fit:cover;background:#000}
 
 /* Gallery 9:16 */
-.gallery-heading { font-size: 26px; text-align: center; color: #e0f2fe; font-weight: 900; text-shadow: var(--glow-secondary); margin: 10px 0 14px; }
-.gallery-scroll { display: flex; gap: 12px; overflow-x: auto; padding: 6px 2px 10px; }
-.gallery-item { flex: 0 0 70%; max-width: 320px; aspect-ratio: 9/16; border-radius: 14px; overflow: hidden; box-shadow: 0 0 20px rgba(0, 242, 254, 0.15); background: #000; }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-heading{font-size:26px;text-align:center;color:#c4b5fd;font-weight:900;text-shadow:var(--glow-purple);margin:10px 0 14px}
+.gallery-scroll{display:flex;gap:12px;overflow-x:auto;padding:6px 2px 10px}
+.gallery-item{flex:0 0 70%;max-width:320px;aspect-ratio:9/16;border-radius:14px;overflow:hidden;box-shadow:0 0 30px rgba(236,72,153,.25);background:#000}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
 
 /* Text */
-.lead-text { color: var(--muted); line-height: 1.6; }
-.lead-text a { color: #38bdf8; font-weight: 900; text-decoration: none; }
+.lead-text{color:var(--muted);line-height:1.6}
+.lead-text a{color:#38bdf8;font-weight:900;text-decoration:underline}
 
 /* Footer */
-.footer { padding: 20px 0; text-align: center; color: var(--muted); font-weight: 600; font-size: 14px;}
-.footer span { color: var(--primary); font-weight: 900; }
+.footer{padding:20px 0;text-align:center;color:var(--muted);font-weight:600}
+.footer a{color:#f472b6;font-weight:900}
 
 /* ===== POPUP CHỌN CÁCH TẢI ===== */
-.download-modal {
-  position: fixed; inset: 0;
-  background: rgba(5, 9, 20, 0.85);
-  backdrop-filter: blur(8px);
-  display: none; align-items: center; justify-content: center;
-  z-index: 3000;
+.download-modal{
+  position:fixed;inset:0;
+  background:rgba(5,6,10,.75);
+  backdrop-filter: blur(6px);
+  display:none;align-items:center;justify-content:center;
+  z-index:3000;
 }
-.download-box {
-  width: 90%; max-width: 420px;
-  background: linear-gradient(180deg, #16203a, #0b1120);
-  border-radius: 24px; padding: 25px 20px;
-  border: 1px solid rgba(0, 242, 254, 0.35);
-  box-shadow: 0 0 40px rgba(0, 242, 254, 0.2);
+.download-box{
+  width:90%;max-width:420px;
+  background:linear-gradient(180deg,#0f142c,#090c1b);
+  border-radius:24px;padding:20px;
+  border:1px solid rgba(139,92,246,.35);
+  box-shadow:0 0 30px rgba(139,92,246,.35);
 }
-.download-title { text-align: center; font-weight: 900; font-size: 22px; margin-bottom: 20px; color: #fff;}
-.option {
-  background: linear-gradient(180deg, #1e293b, #0f172a);
-  border-radius: 18px; padding: 18px; margin-bottom: 14px;
-  border: 1px solid rgba(79, 172, 254, 0.3);
-  box-shadow: 0 0 15px rgba(0, 242, 254, 0.1);
+.download-title{text-align:center;font-weight:900;font-size:20px;margin-bottom:16px;}
+.option{
+  background:linear-gradient(180deg,#11183a,#0b0f22);
+  border-radius:18px;padding:16px;margin-bottom:14px;
+  border:1px solid rgba(236,72,153,.35);
+  box-shadow:0 0 20px rgba(236,72,153,.25);
 }
-.option h3 { margin: 0 0 6px; color: #bae6fd; font-size: 18px;}
-.option p { margin: 0 0 14px; color: #94a3b8; font-size: 13px; }
-.option button {
-  width: 100%; padding: 14px; border-radius: 999px; border: none;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #050914; font-weight: 900; font-size: 16px; cursor: pointer;
-  box-shadow: 0 0 20px rgba(0, 242, 254, 0.4); transition: 0.3s;
+.option h3{margin:0 0 6px;color:#f9a8d4;}
+.option p{margin:0 0 12px;color:#c7d2fe;font-size:14px;}
+.option button{
+  width:100%;padding:12px;border-radius:999px;border:none;
+  background:linear-gradient(135deg,#8b5cf6,#ec4899);
+  color:#fff;font-weight:900;font-size:16px;cursor:pointer;
+  box-shadow:0 0 20px rgba(139,92,246,.6),0 0 25px rgba(236,72,153,.4);
 }
-.option button:hover { transform: translateY(-2px); box-shadow: 0 0 25px rgba(0, 242, 254, 0.6); }
-.close-popup { text-align: center; margin-top: 15px; color: #94a3b8; cursor: pointer; font-weight: 700; transition: 0.3s; }
-.close-popup:hover { color: #fff; }
+.close-popup{text-align:center;margin-top:6px;color:#9ca3af;cursor:pointer;font-weight:700;}
 </style>
 </head>
 <body>
@@ -174,9 +184,9 @@ a { color: inherit; text-decoration: none; }
 <header class="appbar">
   <div class="appbar-inner">
     <div class="appstore-icon-wrap">
-      <img class="appstore-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6dL0wcVnCQ3aUNsBz-4eCLYJH5QXXZY9KMQ&s" alt="AppStore">
-    </div>
-    <span class="appbar-title">HoangKun AppStore</span>
+  <img class="appstore-icon" src="https://www.apple.com/v/app-store/c/images/overview/icon_appstore__ev0z770zyxoy_large_2x.png">
+</div>
+    <span class="appbar-title">AppStore</span>
   </div>
 </header>
 
@@ -185,13 +195,13 @@ a { color: inherit; text-decoration: none; }
 <div class="card hero">
   <div class="hero-top">
     <div class="app-icon-wrap">
-      <img class="app-icon" src="https://assetsdelivery.eldorado.gg/v7/_offers-v2_/d86702a0-f17b-493f-a10b-7ea8f7e388f6_Offer_20260129135138_3072470Large.png?w=600" alt="Minecraft">
+      <img class="app-icon" src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Ficons%2Fo54rzh.png&w=384&q=75">
     </div>
     <div class="hero-info">
-      <h1 class="app-name">Roblox</h1>
+      <h1 class="app-name">Delta VN</h1>
       <div class="badges">
-        <span class="badge orange"><i class="fa-solid fa-shield-halved"></i> Mod by Hoang Kun</span>
-        <span class="badge gray">110,67 MB</span>
+        <span class="badge orange">Powered by HoangKunStore</span>
+        <span class="badge gray">110,2MB</span>
       </div>
       <div class="version-row">
         <span class="dot"></span>
@@ -202,7 +212,7 @@ a { color: inherit; text-decoration: none; }
 
   <div class="hero-action">
     <button class="btn primary" id="installBtn">
-      <span id="installText"><i class="fa-solid fa-cloud-arrow-down"></i> TẢI XUỐNG</span>
+      <span id="installText">TẢI NGAY</span>
       <span class="install-circle">
         <svg viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="10"></circle>
@@ -216,103 +226,110 @@ a { color: inherit; text-decoration: none; }
 <div class="card">
   <div class="section-head"><h2>Xem Trước</h2><div>iPhone</div></div>
   <ul class="screenshot-list">
-    <li><img src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Fpreviews%2F1773754651607-cjmwp-IMG_5444.png&w=1920&q=75" alt="Screenshot 1"></li>
-    <li><img src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Fpreviews%2F1773808015167-jhnhpv-IMG_5451.png&w=1920&q=75" alt="Screenshot 2"></li>
-    <li><img src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Fpreviews%2F1773808015863-14smtb-IMG_5450.png&w=1920&q=75" alt="Screenshot 3"></li>
+    <li><img src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Fpreviews%2F1773754651607-cjmwp-IMG_5444.png&w=1920&q=75"></li>
+    <li><img src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Fpreviews%2F1773808015167-jhnhpv-IMG_5451.png&w=1920&q=75"></li>
+        <li><img src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Fpreviews%2F1773808015863-14smtb-IMG_5450.png&w=1920&q=75"></li>
+            <li><img src="https://ipas.cc/_next/image?url=https%3A%2F%2Fdl.ipas.cc%2Fpreviews%2F1773754650890-toqw7u-IMG_5443.png&w=1920&q=75"></li>
   </ul>
 </div>
 
 <div class="card">
-  <p class="lead-text" style="color: #fff; font-weight: bold; font-size: 16px;"><i class="fa-solid fa-gamepad"></i> Minecraft iOS Mod Premium</p>
-  <p class="lead-text">
-    🔹 Hỗ trợ cài đặt trực tiếp qua profile hoặc chứng chỉ.<br><br>
-    🔹 Cần hỗ trợ cài đặt hoặc mua Chứng chỉ VIP (Không sợ thu hồi), sếp vui lòng nhắn tin Zalo: 
-    <a href="https://zalo.me/0931881502" class="tele-link" target="_blank">0788.265.513</a>
-  </p>
+  <p class="lead-text"><b>- Roblox VN,Client Delta iOS</b></p>
+<p class="lead-text">
+    <b>- Cách Bypass Key Delta,Nếu K Đc Thì Tự Get 
+        <a href="https://t.me/kungame" class="tele-link">Tại Đây</a>
+    </b>
+</p>
+  <p class="lead-text"><b>- Script Tự Kiếm(Nên Kiếm Script Ngon Tránh Ban Acc)</b></p>
 </div>
 
 <div class="card" id="huongdan">
   <div class="gallery-heading">Hướng Dẫn Tin Cậy</div>
   <div class="gallery-scroll">
-    <div class="gallery-item"><img src="https://i.imgur.com/56TqnFh.png" alt="Guide 1"></div>
-    <div class="gallery-item"><img src="https://i.imgur.com/ZiXN2n7.png" alt="Guide 2"></div>
-    <div class="gallery-item"><img src="https://i.imgur.com/5KIIyuG.png" alt="Guide 3"></div>
+    <div class="gallery-item"><img src="https://i.imgur.com/56TqnFh.png"></div>
+    <div class="gallery-item"><img src="https://i.imgur.com/ZiXN2n7.png"></div>
+    <div class="gallery-item"><img src="https://i.imgur.com/5KIIyuG.png"></div>
   </div>
 </div>
 
 <footer class="footer">
-  <p>© 2026 <span>Hoàng Kun Store</span>. All rights reserved.</p>
-  <p style="font-size: 12px; margin-top: 5px;">Hệ thống phân phối Game & Ứng dụng thuộc <b>HOANGKUN STORE</b></p>
+  <p>© 2026 <a href="https://hoangkunstore.id.vn">Hoang Kun Store</a>. All rights reserved.</p>
 </footer>
 
 </main>
 
+<!-- POPUP -->
 <div class="download-modal" id="downloadModal">
   <div class="download-box">
     <div class="download-title">HÃY CHỌN CÁCH TẢI</div>
 
     <div class="option">
-      <h3>Cài trực tiếp (Safari)</h3>
-      <p><i class="fa-solid fa-bolt"></i> Phù hợp cho người mới, cài ngay trên màn hình chính</p>
-      <button onclick="installDirect()"><i class="fa-solid fa-download"></i> TẢI TRỰC TIẾP</button>
+      <h3>Cài trực tiếp (Doanh nghiệp)</h3>
+      <p>Phù hợp cho người mới, cài nhanh</p>
+      <button onclick="installDirect()">TẢI NGAY</button>
     </div>
 
     <div class="option">
-      <h3>Tải IPA Gốc</h3>
-      <p><i class="fa-solid fa-file-arrow-down"></i> Cài qua Esign / Gbox / TrollStore</p>
-      <button onclick="installIPA()"><i class="fa-solid fa-download"></i> TẢI FILE .IPA</button>
+      <h3>Tải IPA</h3>
+      <p>Cài qua Esign / Gbox / TrollStore</p>
+      <button onclick="installIPA()">TẢI NGAY</button>
     </div>
 
-    <div class="close-popup" onclick="closeModal()">ĐÓNG LẠI</div>
+    <div class="close-popup" onclick="closeModal()">Đóng</div>
   </div>
 </div>
 
 <script>
-// 🔗 LINK TẢI CỦA SẾP
+// 🔗 ĐỔI LINK Ở ĐÂY
 const DIRECT_LINK = "itms-services://?action=download-manifest&url=https://tumadammod.github.io/autoup/manifest-roblox.plist";
 const IPA_LINK = "https://dl.ipas.cc/ipas/96qmx7.ipa";
 
 const installBtn = document.getElementById('installBtn');
 const modal = document.getElementById('downloadModal');
 
-// Bấm nút Tải xuống -> Hiện Popup
-installBtn.addEventListener('click', () => {
-  modal.style.display = 'flex';
+installBtn.addEventListener('click',()=>{
+  modal.style.display='flex';
 });
 
-// Đóng Popup
-function closeModal() {
-  modal.style.display = 'none';
+function closeModal(){
+  modal.style.display='none';
 }
 
-// Xử lý nút Tải IPA
-function installIPA() {
-  modal.style.display = 'none';
+function startLoadingAndGo(url){
+  modal.style.display='none';
   installBtn.classList.add('loading');
-  setTimeout(() => {
+  setTimeout(()=>{
     installBtn.classList.remove('loading');
-    window.location.href = IPA_LINK;
+    window.location.href = url;
   }, 2000);
 }
 
-// Xử lý nút Cài Trực Tiếp
-function installDirect() {
+function installDirect(){
+  // Đóng popup
   modal.style.display = 'none';
+
+  // Bật loading trên nút chính
   installBtn.classList.add('loading');
+
+  // Mở link cài ngay
   window.location.href = DIRECT_LINK;
 
-  // Cuộn xuống xem hướng dẫn
+  // Tự cuộn xuống phần hướng dẫn tin cậy
   const guide = document.getElementById('huongdan');
-  if(guide) {
-    setTimeout(() => {
+  if(guide){
+    setTimeout(()=>{
       guide.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 2500);
+    }, 3000);
   }
 
-  // Tắt vòng quay loading
-  setTimeout(() => {
+  // Sau 2 giây thì tắt loading, về nút ban đầu
+  setTimeout(()=>{
     installBtn.classList.remove('loading');
   }, 2000);
+}
+
+function installIPA(){
+  startLoadingAndGo(IPA_LINK);
 }
 </script>
 
